@@ -43,7 +43,7 @@ function getCity(city) {
                     //feels like 
                     let kelvinFeelsLike = res.data.main.feels_like;
                     let usFeelsLike = kelvinToFar(kelvinFeelsLike);
-                    feelsLikeBox.innerHTML = `Feels ${usFeelsLike}&#8457`
+                    feelsLikeBox.innerHTML = `feels ${usFeelsLike}&#8457`
                     //condtions
                     conditionsBox.textContent = res.data.weather[0].description;
                     //city name
