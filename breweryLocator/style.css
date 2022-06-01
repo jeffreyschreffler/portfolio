@@ -1,0 +1,83 @@
+* {
+    margin: 0 auto;
+    padding: 0 auto;
+    font-family: 'Roboto', sans-serif;
+}
+
+body {
+    background-color: rgb(6, 6, 6);
+}
+
+#wrapper {
+    margin-top: 10%;
+}
+
+#search {
+    display: flex;
+    flex-direction: column;
+    height: 20vh;
+    justify-content: space-between;
+}
+
+#title {
+    font-size: 4.5em;
+    color: whitesmoke
+}
+
+#searchBox {
+    width: 200px;
+    height: 25px;
+    border-radius: 5px;
+    border-style: none;
+    margin-bottom: 25px;
+}
+
+#searchBox::placeholder {
+    text-align: center;
+    font-weight: bolder;
+}
+
+#searchBtn {
+    width: 30px;
+    height: 25px;
+    border-radius: 5px;
+    border-style: none;
+    background-color: whitesmoke;
+}
+
+/* brewCard */
+.cardData {
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+    min-width: 200px;;
+    min-height: 50px;
+    padding: 10px;
+    border: 2px solid white;
+    text-align: center;
+    border-radius: 5px;
+    color: whitesmoke;
+    font-size: 1.2em;
+}   
+
+
+@media only screen and (max-width: 400px){
+    .cardData {
+        max-width: 325px;
+    }
+}
+
+@media only screen and (min-width: 401px) and (max-width: 800px) {
+    .cardData {
+        width: 325px;
+    }
+    .body {
+        background-color: red;
+    }
+}
+
+@media only screen and (min-width: 801px){
+    .cardData {
+        max-width: 525px;
+    }
+}
